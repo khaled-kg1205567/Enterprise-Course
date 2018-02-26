@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<form method="post">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label>First name :</label>
+        <input type="text" id="first name" name="first name" maxlength="50" required><br>
+        <label>Last name : </label>
+        <input type="text " required maxlength="50"><br>
+        <label>Date Of Birth : </label>
+        <input type="date" required><br>
+        <label>Weight: 1</label>
+        <input id="weight" type="range" value="1" min="1" max="300" required oninput="Value.value= weight.value">
+        <label>300 Selected Value : </label>
+        <output id="Value">0</output>
+        <br>
+        <label>Gender :</label>
+        <label>
+            <input type="radio" value="male">Male
+        </label>
+        <label>
+            <input type="radio" value="female">Female
+        </label>
+        <br>
+        <label>No.of Siblings :</label> <input type="number" required step="1" min="0" max="15"><label>(0 to 15)</label><br>
+        <br>
+        <label>Employment : </label>
+        <select id="employment" name="employment" multiple size="10" required>
+            <optgroup label="Government">
+                <option label="Administrative"></option>
+                <option label="Technical"></option>
+            </optgroup>
+            <optgroup label="Private Sector">
+                <option label="Owner"></option>
+                <option label="Employee"></option>
+            </optgroup>
+            <option label="Other"></option>
+        </select>
+
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label>Email : </label>
+        <input type="email" required>
+        <label>Phone :</label>
+        <input type="tel" required><br>
+        <label>Preferred Contact Methods :</label><br>
+        <label>
+            <input type="checkbox"> By Phone </label><br>
+        <label>
+            <input type="checkbox"> By Email </label><br>
+        <label><input type="checkbox"> By Mailing Address </label><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Address Information</legend>
+        <label>Address :</label>
+        <textarea rows="10" cols="30"></textarea><br>
+        <label>City :</label>
+        <input type="text" list="cities" required>
+        <datalist id="cities">
+            <option> Al Wakra</option>
+            <option> Al Rayyan</option>
+            <option> Al khor</option>
+        </datalist>
+        <br>
+
+        <label>Country: </label>
+        <select required>
+            <option value="QA" selected>Qatar</option>
+            <option value="BH">Bahrain</option>
+            <option value="Kuwait">Kuwait</option>
+        </select>
+    </fieldset>
+    <br>
+    <input type="submit">
+    <input type="reset">
+</form>
+<br>
+<nav>
+    <lu>
+        <li><a href="https://www.w3schools.com/">W3School</a></li>
+        <li><a href="courses-table.html">Course Table </a></li>
+        <li><a href="registeration.html">Subscribe</a></li>
+    </lu>
+</nav>
+</body>
+</html>
